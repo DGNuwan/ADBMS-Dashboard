@@ -45,7 +45,7 @@ def create_gas_sales_chart():
         title="Daily Gas Cylinder Sales",
         yaxis_title="Cylinders Sold",
         xaxis_title="Time Period",
-        height=500
+        height=600
     )
 
     return fig

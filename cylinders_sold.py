@@ -35,6 +35,7 @@ def get_cylinder_sales_figure(time_filter):
 
     fig = px.pie(
         filtered,
+        height=600,
         names='size',
         values='quantity',
         title=f"Sales Distribution for {latest_date.strftime('%Y-%m-%d')} ({time_filter})"

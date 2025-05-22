@@ -19,7 +19,7 @@ def create_income_dashboard(time_value='daily'):
     }
 
     df = dummy_data[time_value]
-    fig = px.line(df, x='period', y='income', markers=True,
+    fig = px.line(df, x='period', y='income',height=600, markers=True,
                   title=f"Income ({time_value.capitalize()})")
     fig.update_layout(xaxis_title="Period", yaxis_title="Income")
     return fig
