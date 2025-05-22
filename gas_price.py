@@ -21,10 +21,10 @@ def gas_price():
 
     # Update layout and styling
     fig.update_layout(
-        title_text="Gas Prices by Supplier",
+        #title_text="Gas Prices by Supplier",
         showlegend=False,
         height=400,
-        width=1000,
+        width=1500,
         margin=dict(t=50, b=40, l=40, r=40)
     )
 
