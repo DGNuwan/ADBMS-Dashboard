@@ -37,6 +37,6 @@ def get_cylinder_sales_figure(time_filter):
         filtered,
         names='size',
         values='quantity',
-        title=f'Sales Distribution for {latest_date.strftime('%Y-%m-%d')} ({time_filter})'
+        title=f"Sales Distribution for {latest_date.strftime('%Y-%m-%d')} ({time_filter})"
     )
     return fig
