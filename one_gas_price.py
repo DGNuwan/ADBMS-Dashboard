@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-def gas_price():
+def one_gas_price():
     # Cylinder sizes and their prices
     labels = ['12.5kg', '5kg', '2.5kg']
     values = [4500, 2000, 1100]  # Example prices
@@ -18,9 +18,9 @@ def gas_price():
     )])
 
     fig.update_layout(
-        title="Selling Price Distribution per Gas Cylinder",
-        height=500,
-        width=500
+        
+        height=600,
+        width=600
     )
 
     return fig

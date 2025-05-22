@@ -4,6 +4,8 @@ from gas_selling import create_gas_sales_chart
 from Income import create_income_dashboard
 from empty_cylinder import show_empty_cylinder_stock_figure
 from gas_price import gas_price
+from one_gas_price import one_gas_price
+from get_blacklist_data import create_blacklist_donut_chart_figure
 import pandas as pd
 
 df = pd.DataFrame(dummy_data)
@@ -74,6 +76,30 @@ app.layout = html.Div([
            dcc.Graph(figure=gas_price()),
 
            ]),
+
+     html.Div([
+         
+
+         html.Div([
+
+               html.H2("Selling Price Distribution per Gas Cylinder", style={'textAlign': 'center'}),
+              dcc.Graph(figure=one_gas_price()),
+
+               ],style={'width': '50%', 'display': 'inline-block'}),
+
+
+        html.Div([
+            html.H2("Gas Prices by Supplier", style={'textAlign': 'center'}),
+           dcc.Graph(figure=create_blacklist_donut_chart_figure()),
+
+           ],style={'width': '50%', 'display': 'inline-block'} ),
+
+              
+            ]
+            ),
+
+
+     
 
 
    
